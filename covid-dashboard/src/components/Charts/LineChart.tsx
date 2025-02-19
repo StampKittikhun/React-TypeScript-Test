@@ -33,8 +33,7 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
     }]
   };
 
-  return <ReactECharts option={option} style={{ height: '400px' }} />;
+  return <ReactECharts option={option} style={{ height: '400px', width: '100%' }} />;
 };
 
 export default LineChart;
-

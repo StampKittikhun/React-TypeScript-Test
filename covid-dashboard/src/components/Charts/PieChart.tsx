@@ -42,7 +42,7 @@ const PieChart: React.FC<PieChartProps> = ({ data }) => {
     ],
   };
 
-  return <ReactECharts option={option} style={{ height: '400px' }} />;
+  return <ReactECharts option={option} style={{ height: '400px', width: '100%' }} />;
 };
 
 export default PieChart;

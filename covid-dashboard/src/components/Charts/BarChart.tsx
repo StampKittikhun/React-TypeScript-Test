@@ -34,10 +34,9 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
 
   return (
     <div className="chart-card rounded-lg border border-gray-300 p-4 shadow">
-      <ReactECharts option={option} style={{ height: '350px' }} />
+      <ReactECharts option={option} style={{ height: '350px', width: '100%' }} />
     </div>
   );
 };
 
 export default BarChart;
-
