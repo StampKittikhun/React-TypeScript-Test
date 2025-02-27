@@ -1,3 +1,4 @@
+#สำหรับ Production
 # สเตจที่ 1: Build แอปด้วย Node.js
 FROM node:18-alpine AS builder
 
@@ -31,16 +32,3 @@ EXPOSE 80
 # เริ่มรัน Nginx
 CMD ["nginx", "-g", "daemon off;"]
 
-# Stage 1: Development
-FROM node:18-alpine
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm install -g vite
-
-COPY . .
-
-EXPOSE 5173
-
-CMD ["npm", "run", "start"]
